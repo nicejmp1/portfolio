@@ -48,21 +48,21 @@ svg {
 
 #section2 {
     width: 100%;
-    height: 430vh;
+    height: 240vh;
     background-color: #073E7B;
     text-transform: uppercase;
 }
 
 #section2 .intro_number {
     width: 100%;
-    font-size: 32vw;
+    font-size: 22vw;
     position: absolute;
     z-index: 1000;
-    letter-spacing: 4;
+    letter-spacing: 4px;
     padding-right: 2rem;
-    color: var(--white);
+    color: #ECECD1;
     text-align: right;
-    font-family: "GoLong";
+    font-family: "Quicksilver";
 }
 
 
@@ -70,21 +70,20 @@ svg {
     position: relative;
     z-index: 2000;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #ECECD1;
     -webkit-text-fill-color: transparent;
-
 }
 
 #section2 .bgWrap {
     position: relative;
     z-index: 1500;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 #section2 .bgWrap .bg {
     width: 100%;
     background-color: #073E7B;
-    padding-top: 400px;
+    padding-top: 100px;
 }
 
 #section2 .bgWrap .bg .text__info {
@@ -96,10 +95,11 @@ svg {
 }
 
 #section2 .bgWrap .bg .text__info .left {
-    font-size: 4vw;
+    font-size: 5vw;
     position: relative;
     width: 30%;
-    font-family: "GoLong";
+    font-family: "Quicksilver";
+    font-weight: normal;
 }
 
 #section2 .bgWrap .bg .text__info .left::before {
@@ -114,7 +114,8 @@ svg {
 }
 
 #section2 .bgWrap .bg .text__info .left p span {
-    color: var(--white);
+    color: #ECECD1;
+
 }
 
 #section2 .bgWrap .bg .text__info .right {
@@ -156,7 +157,6 @@ svg {
     padding: 4rem;
 }
 
-#section3 .skill__info {}
 
 #section3 .skill__info .skill__title {
     float: right;

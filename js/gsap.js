@@ -42,7 +42,7 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "+=800",
+        end: "+=1100",
         pin: true,
         scrub: 0.5,
         pinSpacing: false,
@@ -53,7 +53,7 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
 gsap.utils.toArray(".skill__title").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
-        start: "-=30",
+        start: "-=40",
         endTrigger: "#section4",
         end: "bottom",
         pin: true,
@@ -64,27 +64,7 @@ gsap.utils.toArray(".skill__title").forEach((panel, i) => {
 });
 
 
-// GSAP 타임라인 초기화
-const ani7 = gsap.timeline({ ease: "power2.out" }); // 여기에 원하는 ease 옵션을 추가
 
-// ".text__info" 내의 특정 요소들에 대해 애니메이션 적용
-[".left .tl", ".right p .t1", ".right p .t2", ".right p .t3", ".right p .t4", ".right .img.t5"].forEach(selector => {
-    ani7.from(selector, { autoAlpha: 0, duration: 1, y: 50 });
-});
-
-// ScrollTrigger 설정
-gsap.utils.toArray(".text__info").forEach((panel, index) => {
-    ScrollTrigger.create({
-        animation: ani7,
-        trigger: panel,
-        start: "top top",
-        end: "+=1200",
-        pin: true,
-        scrub: 0.5,
-        pinSpacing: false,
-        markers: true
-    });
-});
 
 
 
