@@ -25,6 +25,8 @@ svg {
     justify-content: center;
     text-align: center;
     font-family: var(--fontB);
+
+
 }
 
 #section1 .text {
@@ -48,7 +50,7 @@ svg {
 
 #section2 {
     width: 100%;
-    height: 240vh;
+    height: 220vh;
     background-color: #073E7B;
     text-transform: uppercase;
 }
@@ -69,7 +71,7 @@ svg {
 #section2 .intro_number.outline {
     position: relative;
     z-index: 2000;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ECECD1;
     -webkit-text-fill-color: transparent;
 }
@@ -77,76 +79,89 @@ svg {
 #section2 .bgWrap {
     position: relative;
     z-index: 1500;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 #section2 .bgWrap .bg {
     width: 100%;
     background-color: #073E7B;
-    padding-top: 100px;
-}
-
-#section2 .bgWrap .bg .text__info {
-    width: 100%;
+    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
-    padding: 6rem;
-    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40vh;
 }
 
-#section2 .bgWrap .bg .text__info .left {
-    font-size: 5vw;
-    position: relative;
-    width: 30%;
+#section2 .bgWrap .bg h2 {
+    font-size: 6vw;
     font-family: "Quicksilver";
-    font-weight: normal;
-}
-
-#section2 .bgWrap .bg .text__info .left::before {
-    content: '01';
-    width: 100%;
-    height: 100%;
-    top: -30px;
-    left: 0;
-    position: absolute;
-    font-size: 18px;
-    color: var(--white);
-}
-
-#section2 .bgWrap .bg .text__info .left p span {
+    line-height: 1;
+    position: relative;
     color: #ECECD1;
-
 }
 
-#section2 .bgWrap .bg .text__info .right {
+#section2 .bgWrap .bg h2::before {
+    content: "01";
+    position: absolute;
+    left: 0;
+    top: -30px;
+    font-size: 24px;
+    font-family: "Quicksilver";
+    color: #ECECD1;
+}
+
+#section2 .bgWrap .bg .right {
     width: 60%;
 }
 
-#section2 .bgWrap .bg .text__info .right p {
+#section2 .bgWrap .bg .right .about_text {
+    width: 56vw;
     display: flex;
+    gap: 1rem;
+    font-family: "roka";
+}
+
+#section2 .bgWrap .bg .right .about_text p {
+    margin-bottom: 10px;
     text-align: justify;
-    padding-bottom: 20px;
-}
-
-#section2 .bgWrap .bg .text__info .right p span {
-    padding-right: 20px;
     color: var(--white);
-    line-height: 2;
+}
+
+#section2 .bgWrap .bg .right .about_text p em {
+    font-size: 1.25rem;
+    color: #F14C44;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#section2 .bgWrap .bg .right .about_text p span {
     display: block;
+    margin-bottom: 4px;
+    font-size: 1.25rem;
+    color: var(--white);
+    font-weight: 700;
 }
 
-#section2 .bgWrap .bg .text__info .right .img {
-    width: 50%;
-    height: 100%;
+#section2 .bgWrap .bg .right .img {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 5%;
 }
 
-#section2 .bgWrap .bg .text__info .right .img img {
-    width: 70%;
-    border-radius: 30px;
+#section2 .bgWrap .bg .right .img img {
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 
-#section2 .bgWrap .bg .text__info .right .img p {
-    margin-top: 20px;
+#section2 .bgWrap .bg .right .img>div {
+    width: 40%;
+}
+
+#section2 .bgWrap .bg .right .img>p {
+    width: 55%;
+    font-family: "roka";
     color: var(--white);
 }
 
@@ -154,54 +169,59 @@ svg {
     width: 100%;
     min-height: 200vh;
     background-color: #073E7B;
-    padding: 4rem;
+    padding: 4.5rem;
 }
 
 
-#section3 .skill__info .skill__title {
-    float: right;
-    text-align: right;
+#section3 .skill__title {
     width: 30%;
     height: 100px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.6vw;
 }
 
-#section3 .skill__info .skill__title h3 {
-    color: #808080;
+#section3 .skill__title h3 {
+    color: #F19648;
     font-size: 1rem;
+    font-weight: bold;
 }
 
-#section3 .skill__info .skill__title::before {
+#section3 .skill__title::before {
     content: '02';
     width: 100%;
     height: 100%;
     font-size: 18px;
+    position: absolute;
+    color: #F19648;
+    font-weight: bold;
+    top: -30px;
 }
 
-#section3 .skill__info .skill .stat {
+#section3 .skill .stat {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    border-bottom: 1px solid #657E69;
+    border-bottom: 1px solid var(--pointColor);
     position: relative;
-    width: 70%;
-    float: left;
+    margin: 0 2vw;
 }
 
-#section3 .skill__info .skill .stat h4 {
+#section3 .skill .stat h4 {
     color: var(--pointColor);
     font-size: 4vw;
     line-height: 1;
-    letter-spacing: -0.03em;
+    letter-spacing: 1px;
     margin-bottom: -10px;
-    font-family: var(--fontP);
+    font-family: 'Bouncy Thin PERSONAL USE ONLY';
     font-weight: 100;
     text-transform: uppercase;
 }
 
-#section3 .skill__info .skill .stat span {
+#section3 .skill .stat span {
     color: var(--pointColor);
-    font-size: 12vw;
+    font-size: 14vw;
     margin-bottom: -40px;
     font-family: var(--fontN);
     cursor: pointer;
@@ -209,11 +229,11 @@ svg {
     position: relative;
 }
 
-#section3 .skill__info .skill .stat span:hover {
+#section3 .skill .stat span:hover {
     filter: blur(15px);
 }
 
-#section3 .skill__info .skill .stat .hover-img {
+#section3 .skill .stat .hover-img {
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -231,4 +251,86 @@ svg {
     position: absolute;
     right: 10%;
     bottom: -22%;
+}
+
+#section4 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 120px;
+    height: 200vh;
+    padding: 0 5vw;
+    background-color: #F19648;
+}
+
+
+#section4 .two__intro .two__number {
+    text-align: right;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#section4 .two__intro .two__number span {
+    width: 100%;
+    font-size: 22vw;
+    object-fit: contain;
+    float: right;
+    margin: 2.5vh 0;
+    display: block;
+    position: absolute;
+    font-family: "Quicksilver";
+    bottom: 10%;
+    left: -40%;
+}
+
+#section4 .text-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-top: 80px;
+    padding-bottom: 112px;
+    padding: 5vw;
+}
+
+#section4 .text-top .right {
+    width: 38.75vw;
+    columns: 2;
+    column-count: 2;
+    column-gap: 2vw;
+    float: right;
+}
+
+#section4 .text-top .right p {
+    font-family: var(--fontQ);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625;
+    margin: 0 0 16px;
+    color: #232326;
+}
+
+#section4 .text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+#section4 .text2 .left {
+    width: 38.75vw;
+    float: left;
+}
+
+#section4 .text2 .left h2 {
+    font-family: var(--fontP);
+    font-weight: normal;
+    font-size: 6.5rem;
+    color: #232326;
+    margin-bottom: 32px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }

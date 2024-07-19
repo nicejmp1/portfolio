@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Bouncy Black PERSONAL USE ONLY';
+    src: url('Bouncy-BlackPERSONALUSEONLY.woff2') format('woff2'),
+        url('Bouncy-BlackPERSONALUSEONLY.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bouncy PERSONAL USE ONLY';
+    src: url('Bouncy-PERSONALUSEONLY.woff2') format('woff2'),
+        url('Bouncy-PERSONALUSEONLY.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bouncy Thin PERSONAL USE ONLY';
+    src: url('Bouncy-ThinPERSONALUSEONLY.woff2') format('woff2'),
+        url('Bouncy-ThinPERSONALUSEONLY.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
