@@ -229,3 +229,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'TakCubit';
+    src: url('../../fonts/TakCubit.woff2') format('woff2'),
+        url('../../fonts/TakCubit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

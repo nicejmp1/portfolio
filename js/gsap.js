@@ -43,7 +43,7 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
         pin: true,
         scrub: 0.5,
         pinSpacing: false,
-        markers: true
+        // markers: true
     });
 });
 
@@ -111,7 +111,7 @@ gsap.utils.toArray(".text-top").forEach((panel, i) => {
         endTrigger: ".text2",
         end: "top",
         pin: true,
-        markers: true,
+        // markers: true,
         scrub: 0.5,
         pinSpacing: false,
     })
@@ -121,7 +121,7 @@ gsap.utils.toArray(".project__title").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "+=1100",
+        end: "+=1600",
         pin: true,
         scrub: 0.5,
         pinSpacing: false,
@@ -153,7 +153,7 @@ gsap.utils.toArray(".test").forEach((text) => {
             trigger: text,
             start: "top center",
             end: "+=500",
-            markers: true,
+            // markers: true,
             scrub: 1,
         }
     });
@@ -172,7 +172,7 @@ gsap.utils.toArray(".test").forEach((text) => {
             trigger: text,
             start: "top center",
             end: "+=100",
-            markers: true,
+            // markers: true,
             scrub: 1
         }
     });
@@ -183,3 +183,4 @@ gsap.to("progress", {
     ease: "none",
     scrollTrigger: { scrub: 0.3 }
 })
+

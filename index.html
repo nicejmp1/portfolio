@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <div class="parallax__progress">
+        <progress max="100" value="0"></progress>
+    </div>
+
     <section id="section1">
         <div class="text">
             <h1 class="split">Frontend Developer</h1>
@@ -304,14 +308,82 @@
                 </div>
             </div>
         </div>
+        <div class="bgWrap ">
+            <div class="bg">
+                <div class="img">
+                    <img src="assets/img/123.gif" alt="">
+                    <img src="assets/img/123.gif" alt="">
+                    <img src="assets/img/123.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section5 -->
+
+    <section id="section6">
+        <div class="project__title">
+            <span>project</span>
+        </div>
+        <div class="project__title outline">
+            <span>project</span>
+            <div class="text">
+                <div class="left">
+                    <span>left</span>
+                </div>
+                <div class="right">
+                    <a href="/" target="_blank" class="c1">code</a>
+                    <a href="/" target="_blank" class="v1">view</a>
+                </div>
+            </div>
+        </div>
         <div class="bgWrap">
-            <div class="bg"></div>
+            <div class="bg">
+                <div class="img">
+                    <img class="i1" src="assets/img/123.gif" alt="">
+                    <img class="i2" src="assets/img/123.gif" alt="">
+                    <img class="i3" src="assets/img/123.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section6 -->
+
+    <section id="section7">
+        <div class="project__title">
+            <span>project</span>
+        </div>
+        <div class="project__title outline">
+            <span>project</span>
+            <div class="text">
+                <div class="left">
+                    <span>left</span>
+                </div>
+                <div class="right">
+                    <a href="/" target="_blank" class="c1">code</a>
+                    <a href="/" target="_blank" class="v1">view</a>
+                </div>
+            </div>
+        </div>
+        <div class="bgWrap">
+            <div class="bg">
+                <div class="img">
+                    <img class="i1" src="assets/img/123.gif" alt="">
+                    <img class="i2" src="assets/img/123.gif" alt="">
+                    <img class="i3" src="assets/img/123.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //section7 -->
+
+    <section id="section8">
+        <div class="three__intro">
+            <div class="three__title">
+                <h3>03</h3>
+            </div>
         </div>
     </section>
 
-    <div class="parallax__progress">
-        <progress max="100" value="0"></progress>
-    </div>
 
     <script src="js/matter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -334,7 +406,7 @@
         lenis.on('scroll', ScrollTrigger.update)
 
         gsap.ticker.add((time) => {
-            lenis.raf(time * 600)
+            lenis.raf(time * 500)
         })
 
         gsap.ticker.lagSmoothing(0)
