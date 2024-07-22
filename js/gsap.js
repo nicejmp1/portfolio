@@ -39,7 +39,7 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "+=1100",
+        end: "+=1000",
         pin: true,
         scrub: 0.5,
         pinSpacing: false,
@@ -92,44 +92,50 @@ new ScrollMagic.Scene({
     .setTween($tween_avata)
     .addTo($controller);
 
-gsap.to("#section4 .two__intro .two__number span", {
+gsap.set("#section4 .two__intro .two__number h3", { x: -1000 })
+gsap.to("#section4 .two__intro .two__number h3", {
     xPercent: 200,
     ease: "none",
     scrollTrigger: {
         trigger: "#section4",
-        start: "top top",
+        start: "-=500",
         end: "bottom top",
         scrub: true,
     }
 });
 
+const section = document.querySelector("#section4");
+const topRight = section.querySelector(".topRight");
 
-gsap.utils.toArray(".text-top").forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        endTrigger: ".text2",
-        end: "top",
+gsap.to(topRight, {
+    scrollTrigger: {
+        trigger: topRight,
+        start: "top 5%",  // topRight의 상단이 뷰포트 상단에 도달할 때 시작
+        end: () => `+=${section.offsetHeight - 300}px`,  // section4의 전체 높이만큼 스크롤
         pin: true,
-        // markers: true,
-        scrub: 0.5,
-        pinSpacing: false,
-    })
-})
-
-gsap.utils.toArray(".project__title").forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        end: "+=1600",
-        pin: true,
-        scrub: 0.5,
-        pinSpacing: false,
-        markers: true
-    });
+        scrub: true
+    },
 });
 
+const projects = document.querySelectorAll(".project");
 
+projects.forEach(project => {
+    const topProject = project.querySelectorAll(".project__title");
+
+    topProject.forEach(title => {
+        gsap.to(title, {
+            scrollTrigger: {
+                trigger: title,
+                start: "top top",
+                end: () => `+=${project.offsetHeight - 550}px`,
+                pin: true,
+                markers: true,
+                scrub: true,
+                pinSpacing: false
+            }
+        })
+    })
+})
 
 // 요소 초기 설정 (보이지 않도록 설정)
 gsap.utils.toArray(".test").forEach((text) => {

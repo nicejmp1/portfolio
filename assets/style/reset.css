@@ -1,15 +1,20 @@
+/* border-box 초기화 */
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: var(--black);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
+/* 가로모드 글씨 확대 초기화 */
+html {
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 공백 초기화 */
 body,
 button,
 dd,
@@ -40,15 +45,23 @@ figcaption {
     padding: 0;
 }
 
+/* 폰트 초기화 */
 body,
 button,
 input,
 select,
 table,
 textarea {
-    font-family: var(--fontG), var(--fontN), "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #202020;
+    font-family: NexonLv1GothicLow, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+/* 링크 초기화 */
 a,
 a:hover,
 a:focus {
@@ -56,6 +69,16 @@ a:focus {
     text-decoration: none;
 }
 
+/* 버튼 초기화 */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/* 스타일 초기화 */
 h1,
 h2,
 h3,
@@ -83,6 +106,20 @@ img {
     width: 100%;
 }
 
+/* table */
+table {
+    border: 0;
+    border-collapse: collaspe;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* 간격 설정 */
+.mt0 {
+    margin-top: 0 !important;
+}
+
+/* 디자인 초기화 */
 input,
 textarea,
 button,
@@ -90,27 +127,34 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
     border-radius: 0;
     font-size: 16px;
-    border: 0;
 }
 
+/* 스킵메뉴 */
 #skip a {
     position: absolute;
     left: 10px;
     top: -92px;
     z-index: 100000;
-    font-size: 1rem;
-    padding: 10px 30px;
-    color: var(--white);
-    background: var(--black);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    background: #000;
+    font-family: "Chosunilbo_myungjo";
+    transition: none;
 }
 
 #skip a:focus,
 #skip a:active {
-    top: 10px;
+    top: 20px;
+    transition: all 0.6s ease;
 }
 
+/* 글씨 감추기 */
 .blind {
     position: absolute;
     width: 1px;
@@ -123,11 +167,95 @@ select {
     border: 0;
 }
 
-.ir {
-    display: block;
-    overflow: hidden;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -9999px;
-    white-space: nowrap;
+/* 간격 셋팅 */
+.mt0 {
+    margin-top: 0;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt60 {
+    margin-top: 60px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
+
+.mt80 {
+    margin-top: 80px;
+}
+
+.mt90 {
+    margin-top: 90px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pt40 {
+    padding-top: 40px;
+}
+
+.pt50 {
+    padding-top: 50px;
+}
+
+.pt60 {
+    padding-top: 60px;
+}
+
+.pt70 {
+    padding-top: 70px;
+}
+
+.pt80 {
+    padding-top: 80px;
+}
+
+.pt90 {
+    padding-top: 90px;
+}
+
+.pt100 {
+    padding-top: 100px;
+}
+
+.pt200 {
+    padding-top: 200px;
 }

@@ -1,7 +1,7 @@
 @import 'fonts.css';
 @import 'reset.css';
 @import 'vars.css';
-@import url('https://websfont.github.io/websfont/websfont.css');
+
 
 .parallax__progress progress {
     position: fixed;
@@ -51,8 +51,6 @@ svg {
     justify-content: center;
     text-align: center;
     font-family: var(--fontB);
-
-
 }
 
 #section1 .text {
@@ -75,30 +73,33 @@ svg {
 }
 
 #section2 {
-    width: 100%;
-    height: 220vh;
-    background-color: #073E7B;
-    text-transform: uppercase;
+    height: 200vh;
+    background-color: #10376b;
+    position: relative;
+    overflow: hidden;
 }
 
 #section2 .intro_number {
-    width: 100%;
-    font-size: 22vw;
-    position: absolute;
-    z-index: 1000;
-    letter-spacing: 4px;
-    padding-right: 2rem;
-    color: #ECECD1;
     text-align: right;
-    font-family: "Quicksilver";
+    font-size: 40vw;
+    line-height: 0.9;
+    font-family: "SwisspoTrial-CondensedBold";
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    padding-right: 4vw;
+    color: #ececd1;
 }
 
-
 #section2 .intro_number.outline {
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: 2000;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ECECD1;
+    width: 100%;
+}
+
+#section2 .intro_number .front {
+    -webkit-text-stroke: 2px #ececd1;
     -webkit-text-fill-color: transparent;
 }
 
@@ -110,7 +111,7 @@ svg {
 
 #section2 .bgWrap .bg {
     width: 100%;
-    background-color: #073E7B;
+    background-color: #10376b;
     padding: 0 5vw;
     display: flex;
     justify-content: space-between;
@@ -120,9 +121,9 @@ svg {
 
 #section2 .bgWrap .bg h2 {
     font-size: 6vw;
-    font-family: "Quicksilver";
-    line-height: 1;
+    line-height: 0.8;
     position: relative;
+    font-family: "SwisspoTrial-SemiCondMedTall";
     color: #ECECD1;
 }
 
@@ -132,8 +133,7 @@ svg {
     left: 0;
     top: -30px;
     font-size: 24px;
-    font-family: "Quicksilver";
-    color: #ECECD1;
+    font-family: "SwisspoTrial-SemiCondMedTall";
 }
 
 #section2 .bgWrap .bg .right {
@@ -143,14 +143,16 @@ svg {
 #section2 .bgWrap .bg .right .about_text {
     width: 56vw;
     display: flex;
-    gap: 1rem;
-    font-family: "roka";
+    gap: 20px;
+    font-family: "gyeonggiBatang";
+    color: var(--white);
+
 }
 
 #section2 .bgWrap .bg .right .about_text p {
     margin-bottom: 10px;
     text-align: justify;
-    color: var(--white);
+    font-weight: normal;
 }
 
 #section2 .bgWrap .bg .right .about_text p em {
@@ -177,7 +179,7 @@ svg {
 }
 
 #section2 .bgWrap .bg .right .img img {
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 10px;
 }
 
@@ -186,15 +188,14 @@ svg {
 }
 
 #section2 .bgWrap .bg .right .img>p {
-    width: 55%;
-    font-family: "roka";
+    width: 45%;
+    font-family: "gyeonggiBatang";
     color: var(--white);
 }
 
 #section3 {
-    width: 100%;
     min-height: 200vh;
-    background-color: #073E7B;
+    background-color: #10376b;
     padding: 4.5rem;
 }
 
@@ -280,180 +281,127 @@ svg {
 }
 
 #section4 {
+    height: 100vh;
+    background-color: #e0dcd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
-    max-height: 200vh;
-    height: 180vh;
-    padding: 0 5vw;
-    background-color: #F19648;
 }
 
 
-#section4 .two__intro .two__number {
-    text-align: right;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    height: 120vh;
-    overflow: hidden;
-    position: relative;
-
-}
-
-#section4 .two__intro .two__number span {
-    width: 100%;
-    font-size: 24vw;
-    object-fit: contain;
-    float: right;
-    margin: 2.5vh 0;
-    display: block;
-    position: absolute;
-    color: #F14C44;
-    font-family: "Quicksilver";
-    z-index: 1;
-    bottom: 10%;
-    left: -40%;
-}
-
-#section4 .text-top {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 80px;
-    padding-bottom: 112px;
-    padding: 5vw;
-    z-index: 10;
-
-}
-
-#section4 .text-top .right {
-    width: 50vw;
-    columns: 2;
-    column-count: 2;
-    column-gap: 2vw;
-    float: right;
-}
-
-#section4 .text-top .right p {
-    font-family: "roka";
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--white);
-}
-
-#section4 .text {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-}
-
-#section4 .text2 .left {
-    width: 40vw;
-    float: left;
-    margin-left: 40px;
-}
-
-#section4 .text2 .left h2 {
-    font-family: var(--fontP);
-    font-weight: normal;
-    font-size: 6.5rem;
-    color: var(--white);
-    margin-bottom: 32px;
-    line-height: 1;
-    letter-spacing: -0.03em;
+#section4 .two__intro .two__number h3 {
+    font-size: 70vw;
+    line-height: 0.9;
+    color: #fff;
+    font-family: "SwisspoTrial-CondensedBold";
     text-transform: uppercase;
+    letter-spacing: 1vw;
+    color: #d9d5d1;
+}
+
+#section4 .botLeft {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 1000;
+    font-family: "PartizenoRegular";
+    font-size: 10vw;
+    line-height: 0.9;
+}
+
+#section4 .topRight {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 600px;
+}
+
+#section4 .topRight p {
+    margin-bottom: 10px;
+    font-family: "gyeonggiBatang";
+    font-weight: 400;
+}
+
+#section4 .topRight p strong {
+    font-weight: 900;
 }
 
 #section5 {
-    width: 100%;
-    height: 270vh;
-    max-height: 300vh;
-    background-color: #F5D259;
+    min-height: 100vh;
+    max-height: 200vh;
+    background-color: #0d59d0;
+    position: relative;
 }
 
-#section6 {
-    width: 100%;
-    height: 270vh;
-    background-color: #F55A3C;
-}
-
-#section7 {
-    width: 100%;
-    height: 270vh;
-    background-color: #fff;
-}
-
-#section5 .project__title,
-#section6 .project__title,
-#section7 .project__title {
-    width: 100%;
-    position: absolute;
+#section5 .project__title {
+    position: relative;
     z-index: 1000;
+    font-size: 15vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    padding: 60px 4%;
     text-align: center;
 }
 
-#section5 .project__title>span,
-#section6 .project__title>span,
-#section7 .project__title>span {
-    border-top: 1px solid #073E7B;
-    border-bottom: 1px solid #073E7B;
-    font-family: 'TakCubit';
-    text-transform: uppercase;
-    color: #073E7B;
-    font-size: 20vw;
+#section5 .project__title .space {
+    text-align: center;
+    width: 8.1vw;
+    display: inline-block;
+    font-size: 10vw;
 }
 
-#section5 .project__title.outline,
-#section6 .project__title.outline,
-#section7 .project__title.outline {
-    position: relative;
+#section5 .project__title.outline {
+    position: absolute;
     z-index: 2000;
+    top: 0;
 }
 
-#section5 .project__title .text,
-#section6 .project__title .text,
-#section7 .project__title .text {
+#section5 .project__title.outline .front {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#section5 .project__title .textDesc {
+    font-size: 1rem;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
 }
 
-#section5 .project__title .text .right .c1,
-#section6 .project__title .text .right .c1,
-#section7 .project__title .text .right .c1 {
+#section5 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+}
+
+#section5 .project__title .textDesc .right {
+    width: 30%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+}
+
+#section5 .project__title .textDesc .right a {
     display: inline-block;
-    border: 2px solid #073E7B;
-    color: #073E7B;
-    font-weight: bold;
-    padding: 4px 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
     border-radius: 30px;
 }
 
-#section5 .project__title .text .right .v1,
-#section6 .project__title .text .right .v1,
-#section7 .project__title .text .right .v1 {
-    margin-left: 6px;
-    display: inline-block;
-    border: 2px solid #073E7B;
-    color: #073E7B;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 30px;
-}
-
-
-#section5 .project__title.outline>span,
-#section6 .project__title.outline>span,
-#section7 .project__title.outline>span {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #073E7B;
-    -webkit-text-fill-color: transparent;
-}
-
-#section5 .bgWrap,
-#section6 .bgWrap,
-#section7 .bgWrap {
+#section5 .bgWrap {
     position: relative;
     z-index: 1500;
     padding-top: 100px;
@@ -461,45 +409,15 @@ svg {
 
 #section5 .bgWrap .bg {
     width: 100%;
-    background-color: #F5D259;
+    background-color: #0d59d0;
     padding: 0 5vw;
-    padding-top: 40px;
-    padding-bottom: 40vh;
-}
-
-#section6 .bgWrap .bg {
-    width: 100%;
-    background-color: #F55A3C;
-    padding: 0 5vw;
-    height: 200vh;
-    padding-top: 40px;
-    padding-bottom: 40vh;
-}
-
-#section7 .bgWrap .bg {
-    width: 100%;
-    background-color: #fff;
-    padding: 0 5vw;
-    padding-top: 40px;
-    padding-bottom: 40vh;
-}
-
-#section5 .bgWrap .bg .img,
-#section6 .bgWrap .bg .img,
-#section7 .bgWrap .bg .img {
-    width: 100%;
-    height: 100%;
-    padding-top: 160px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40vh;
+    height: 100vh;
 }
 
-#section5 .bgWrap .bg .img img,
-#section6 .bgWrap .bg .img img,
-#section7 .bgWrap .bg .img img {
-    max-width: 400px;
-    max-height: 400px;
-    margin-bottom: 30px;
+#section6 {
+    height: 100vh;
 }

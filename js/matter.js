@@ -123,7 +123,7 @@ function createSvgBodiesRandomly() {
                     restitution: 0.8,
                     render: {
                         // fillStyle: "#" + Math.floor(Math.random() * 16777215).toString(16), // 무작위 색상
-                        strokeStyle: '#073E7B',
+                        strokeStyle: '#202022',
                         lineWidth: 3
                     }
                 }
@@ -146,7 +146,7 @@ function createCircle() {
             restitution: 0.8,
             render: {
                 fillStyle: "#F14C43",
-                strokeStyle: "#F14C43",
+                strokeStyle: "#202022",
                 lineWidth: 3
             }
         }

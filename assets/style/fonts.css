@@ -1,6 +1,6 @@
+@import url('https://websfont.github.io/websfont/websfont.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url('https://websfont.github.io/websfont/websfont.css');
 
 
 @font-face {
@@ -236,5 +236,82 @@
         url('../../fonts/TakCubit.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Compressed Hv';
+    src: url('../../fonts/colve/Coolvetica../../fonts/colve/CompressedHv-Regular.woff2') format('woff2'),
+        url('../../fonts/colve/CoolveticaCompressedHv-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Crammed Rg';
+    src: url('../../fonts/colve/CoolveticaCrammedRg-Regular.woff2') format('woff2'),
+        url('../../fonts/colve/CoolveticaCrammedRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Condensed Rg';
+    src: url('../../fonts/colve/CoolveticaCondensedRg-Regular.woff2') format('woff2'),
+        url('../../fonts/colve/CoolveticaCondensedRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('../../fonts/colve/CoolveticaRg-Regular.woff2') format('woff2'),
+        url('../../fonts/colve/CoolveticaRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('../../fonts/colve/CoolveticaRg-Italic.woff2') format('woff2'),
+        url('../../fonts/colve/CoolveticaRg-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SwisspoTrial-SemiCondMedTall";
+    src: url("../../fonts/SwisspoTrial-SemiCondMedTall.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SwisspoTrial-CondensedBold";
+    src: url("../../fonts/SwisspoTrial-CondensedBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SwisspoTrial-CondensedLight";
+    src: url("../../fonts/SwisspoTrial-CondensedLight.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SwisspoTrial-ThinTall";
+    src: url("../../fonts/SwisspoTrial-ThinTall.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
