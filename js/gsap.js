@@ -52,7 +52,7 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
 const $avatarImgSqc = [];
 
 for (let i = 1; i <= 2; i++) {
-    $avatarImgSqc.push(`/assets/img/face_${i}.jpg`);
+    $avatarImgSqc.push(`../assets/img/face_${i}.jpg`);
 }
 
 // 이미지를 미리 로딩하는 함수입니다.
