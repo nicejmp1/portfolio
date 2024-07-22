@@ -47,51 +47,6 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
     });
 });
 
-
-// 이미지 배열을 초기화합니다.
-const $avatarImgSqc = [];
-
-for (let i = 1; i <= 2; i++) {
-    $avatarImgSqc.push(`assets/img/face_${i}.jpg`);
-}
-
-// 이미지를 미리 로딩하는 함수입니다.
-function preloading(preImgs) {
-    let imgTotal = preImgs.length;
-    for (let i = 0; i < imgTotal; i++) {
-        let img = new Image();
-        img.src = preImgs[i];
-    }
-}
-
-preloading($avatarImgSqc);
-
-// 이미지 객체와 이미지 태그를 정의합니다.
-const $img = { crntImg: 0 },
-    $imgTag = document.querySelector('.avata');
-
-// TweenMax 애니메이션을 설정합니다.
-let $tween_avata = TweenMax.to($img, 1, {
-    crntImg: $avatarImgSqc.length - 1,
-    roundProps: 'crntImg',
-    immediateRender: true,
-    onUpdate: function () {
-        $imgTag.setAttribute('src', $avatarImgSqc[$img.crntImg]);
-    }
-});
-
-// ScrollMagic 컨트롤러를 정의합니다.
-const $controller = new ScrollMagic.Controller();
-
-// ScrollMagic Scene을 설정합니다.
-new ScrollMagic.Scene({
-    duration: 5000,
-    triggerElement: '#trigger',
-    triggerHook: 0
-})
-    .setTween($tween_avata)
-    .addTo($controller);
-
 gsap.set("#section4 .two__intro .two__number h3", { x: -1000 })
 gsap.to("#section4 .two__intro .two__number h3", {
     xPercent: 200,
@@ -111,7 +66,7 @@ gsap.to(topRight, {
     scrollTrigger: {
         trigger: topRight,
         start: "top 5%",  // topRight의 상단이 뷰포트 상단에 도달할 때 시작
-        end: () => `+=${section.offsetHeight - 300}px`,  // section4의 전체 높이만큼 스크롤
+        end: () => `+=${section.offsetHeight - 280}px`,  // section4의 전체 높이만큼 스크롤
         pin: true,
         scrub: true
     },
