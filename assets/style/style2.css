@@ -1,0 +1,172 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #d7d3d0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    font-family: "PartizenoRegular";
+}
+
+#section1 .text {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#section1 .text h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 4vw;
+}
+
+#section1 .text h1 .split {
+    opacity: 0;
+}
+
+#section1 .text p {
+    font-size: 1vw;
+    width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    font-family: "heirOfLight";
+    line-height: 1.5;
+}
+
+#section1 canvas {
+    pointer-events: none;
+}
+
+.matter-container {
+    pointer-events: none;
+}
+
+/* section2 */
+#section2 {
+    height: 300vh;
+    background-color: #10376b;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5%;
+}
+
+#section2 .title {
+    font-family: "SwisspoTrial-CondensedLight";
+    font-size: 30vw;
+    color: #fff;
+    text-align: right;
+    line-height: 1;
+}
+
+#section2 .title.outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#section2 .about1 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#section2 .about1 h2 {
+    width: 25%;
+    position: relative;
+    font-size: 4vw;
+    line-height: 1.2;
+    font-family: "gmarket";
+}
+
+#section2 .about1 h2::before {
+    content: "01";
+    position: absolute;
+    left: 0;
+    top: -44px;
+    font-size: 30px;
+    font-family: "gmarket";
+}
+
+#section2 .about1 .about__text {
+    width: 55%;
+    text-align: left;
+    font-family: "gowunBatang";
+}
+
+#section2 .about1 .about__text p {
+    margin-bottom: 10px;
+}
+
+#section2 .about1 .about__text .img {
+    max-width: 460px;
+    height: 600px;
+    background-color: #ccc;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#section2 .about1 .about__text .img .front {
+    background-image: url(../img/face01.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#section2 .about1 .about__text .img .back {
+    background-image: url(../img/face02.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#section2 .about1 .about__text .skill {
+    width: 100%;
+    margin-top: 40px;
+}
+
+#section2 .about1 .about__text .skill ul {
+    border-top: 1px solid #fff;
+    padding-top: 5px;
+    margin-top: 15px;
+}
+
+#section2 .about1 .about__text .skill li {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+}
+
+#section2 .about1 .about__text .skill li span:nth-child(1) {
+    text-transform: uppercase;
+    flex: 1;
+}
+
+#section2 .about1 .about__text .skill li span:nth-child(2) {
+    flex: 1;
+}
+
+#section2 .about1 .about__text .skill li span:nth-child(3) {
+    flex: 1;
+    text-align: right;
+}
+
+#section3 {
+    height: 100vh;
+}
