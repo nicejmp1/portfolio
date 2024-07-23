@@ -648,8 +648,19 @@ svg {
     padding-bottom: 20vh;
 }
 
-#section8 {
+.snapping {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.snapping .panel {
+    width: 100%;
     height: 100vh;
-    background-color: #000;
-    color: #fff;
+}
+
+.snapping .panel.red {
+    background-color: black;
 }
