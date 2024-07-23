@@ -115,12 +115,12 @@ gsap.utils.toArray(".img").forEach((img) => {
 })
 
 // section5 애니메이션
-gsap.set("#section5 .project__img", { y: 800 })
+gsap.set("#section5 .project__img", { y: 850 })
 
 gsap.utils.toArray("#section5 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 65%",
+        start: "top 50%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -153,12 +153,12 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
 })
 
 // section6 애니메이션
-gsap.set("#section6 .project__img", { y: 800 })
+gsap.set("#section6 .project__img", { y: 850 })
 
 gsap.utils.toArray("#section6 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 65%",
+        start: "top 50%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -191,12 +191,12 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
 })
 
 // section6 애니메이션
-gsap.set("#section7 .project__img", { y: 800 })
+gsap.set("#section7 .project__img", { y: 850 })
 
 gsap.utils.toArray("#section7 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 65%",
+        start: "top 50%",
         end: "bottom",
         scrub: 3,
         markers: true,
