@@ -115,12 +115,12 @@ gsap.utils.toArray(".img").forEach((img) => {
 })
 
 // section5 애니메이션
-gsap.set("#section5 .project__img", { y: 850 })
+gsap.set("#section5 .project__img", { y: 900 })
 
 gsap.utils.toArray("#section5 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 50%",
+        start: "top 80%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -129,7 +129,6 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
 
@@ -137,7 +136,6 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
                 rotation: self.progress * -30,
                 x: self.progress * -150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
 
@@ -145,7 +143,6 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
         }
@@ -158,7 +155,7 @@ gsap.set("#section6 .project__img", { y: 850 })
 gsap.utils.toArray("#section6 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 50%",
+        start: "top 70%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -167,23 +164,20 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
 
             gsap.to("#section6 .p2", {
                 rotation: self.progress * -30,
                 x: self.progress * -150,
-                y: -self.progress * 900,
-                duration: 0.1,
+                y: -self.progress * 1000,
                 overwrite: 'auto'
             })
 
             gsap.to("#section6 .p3", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
-                duration: 0.1,
+                y: -self.progress * 1000,
                 overwrite: 'auto'
             })
         }
@@ -196,7 +190,7 @@ gsap.set("#section7 .project__img", { y: 850 })
 gsap.utils.toArray("#section7 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 50%",
+        start: "top 70%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -205,7 +199,6 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
 
@@ -213,7 +206,6 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
                 rotation: self.progress * -30,
                 x: self.progress * -150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
 
@@ -221,7 +213,6 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
                 y: -self.progress * 1000,
-                duration: 0.1,
                 overwrite: 'auto'
             })
         }
