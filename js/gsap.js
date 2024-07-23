@@ -39,13 +39,14 @@ gsap.utils.toArray(".intro_number").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "+=1000",
+        end: () => "+=" + document.querySelector(".bg").offsetHeight,
         pin: true,
-        scrub: 0.5,
+        scrub: 1,
         pinSpacing: false,
         // markers: true
     });
 });
+
 
 gsap.set("#section4 .two__intro .two__number h3", { x: -1000 })
 gsap.to("#section4 .two__intro .two__number h3", {
@@ -66,7 +67,7 @@ gsap.to(topRight, {
     scrollTrigger: {
         trigger: topRight,
         start: "top 5%",  // topRight의 상단이 뷰포트 상단에 도달할 때 시작
-        end: () => `+=${section.offsetHeight - 280}px`,  // section4의 전체 높이만큼 스크롤
+        end: () => `+=${section.offsetHeight - 300}px`,  // section4의 전체 높이만큼 스크롤
         pin: true,
         scrub: true
     },
@@ -85,63 +86,146 @@ projects.forEach(project => {
                 end: () => `+=${project.offsetHeight - 550}px`,
                 pin: true,
                 markers: true,
-                scrub: true,
+                scrub: 3,
                 pinSpacing: false
             }
         })
     })
 })
 
-// 요소 초기 설정 (보이지 않도록 설정)
-gsap.utils.toArray(".test").forEach((text) => {
-    gsap.set(text.querySelectorAll("p"), { yPercent: 100, autoAlpha: 0 });
-    gsap.set(text.querySelectorAll("h2"), { xPercent: -100, autoAlpha: 0 });
-});
-
-// 스크롤 트리거를 사용하여 요소가 나타나게 설정
-gsap.utils.toArray(".test").forEach((text) => {
-    // p 요소 애니메이션
-    gsap.to(text.querySelectorAll("p"), {
-        yPercent: 0,
-        autoAlpha: 1,
-        duration: 3,
-        ease: "circ.out",
-        stagger: {
-            amount: 1,
-            from: "random"
-        },
-        scrollTrigger: {
-            trigger: text,
-            start: "top center",
-            end: "+=500",
-            // markers: true,
-            scrub: 1,
-        }
-    });
-
-    // h2 요소 애니메이션
-    gsap.to(text.querySelectorAll("h2"), {
-        xPercent: 0,
-        autoAlpha: 1,
-        duration: 3,
-        ease: "circ.out",
-        stagger: {
-            amount: 1,
-            from: "random"
-        },
-        scrollTrigger: {
-            trigger: text,
-            start: "top center",
-            end: "+=100",
-            // markers: true,
-            scrub: 1
-        }
-    });
-});
-
 gsap.to("progress", {
     value: 100,
     ease: "none",
     scrollTrigger: { scrub: 0.3 }
 })
+
+function changeImage(newSrc) {
+    document.querySelector(".avata").src = newSrc;
+}
+
+gsap.utils.toArray(".img").forEach((img) => {
+    ScrollTrigger.create({
+        trigger: img,
+        start: "top center",
+        markers: true,
+        end: () => "+=" + document.querySelector(".img").offsetHeight,
+        onEnter: () => changeImage("/assets/img/face_2.jpg"),
+        onEnterBack: () => changeImage("/assets/img/face_1.jpg")
+    })
+})
+
+// section5 애니메이션
+gsap.set("#section5 .project__img", { y: 400 })
+
+gsap.utils.toArray("#section5 .project__img").forEach((img) => {
+    ScrollTrigger.create({
+        trigger: img,
+        start: "top 60%",
+        end: "bottom",
+        scrub: 3,
+        markers: true,
+        onUpdate: (self) => {
+            gsap.to("#section5 .p1", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section5 .p2", {
+                rotation: self.progress * -30,
+                x: self.progress * -150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section5 .p3", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+        }
+    })
+})
+
+// section6 애니메이션
+gsap.set("#section6 .project__img", { y: 400 })
+
+gsap.utils.toArray("#section6 .project__img").forEach((img) => {
+    ScrollTrigger.create({
+        trigger: img,
+        start: "top 60%",
+        end: "bottom",
+        scrub: 3,
+        markers: true,
+        onUpdate: (self) => {
+            gsap.to("#section6 .p1", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section6 .p2", {
+                rotation: self.progress * -30,
+                x: self.progress * -150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section6 .p3", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+        }
+    })
+})
+
+// section6 애니메이션
+gsap.set("#section7 .project__img", { y: 400 })
+
+gsap.utils.toArray("#section7 .project__img").forEach((img) => {
+    ScrollTrigger.create({
+        trigger: img,
+        start: "top 60%",
+        end: "bottom",
+        scrub: 3,
+        markers: true,
+        onUpdate: (self) => {
+            gsap.to("#section7 .p1", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section7 .p2", {
+                rotation: self.progress * -30,
+                x: self.progress * -150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section7 .p3", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 900,
+                duration: 0.1,
+                overwrite: 'auto'
+            })
+        }
+    })
+})
+
 

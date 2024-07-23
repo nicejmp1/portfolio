@@ -315,7 +315,7 @@ svg {
     position: absolute;
     right: 5%;
     top: 5%;
-    width: 600px;
+    width: 34vw;
 }
 
 #section4 .topRight p {
@@ -329,8 +329,7 @@ svg {
 }
 
 #section5 {
-    min-height: 100vh;
-    max-height: 200vh;
+    height: 200vh;
     background-color: #0d59d0;
     position: relative;
 }
@@ -343,7 +342,7 @@ svg {
     line-height: 1;
     color: #fff;
     font-weight: 900;
-    padding: 60px 4%;
+    padding: 60px 5%;
     text-align: center;
 }
 
@@ -404,7 +403,8 @@ svg {
 #section5 .bgWrap {
     position: relative;
     z-index: 1500;
-    padding-top: 100px;
+    height: 100vh;
+
 }
 
 #section5 .bgWrap .bg {
@@ -414,10 +414,226 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 40vh;
+}
+
+#section5 .bgWrap .project__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+#section5 .bgWrap .project__img img {
+    width: 20vw;
+    padding-bottom: 20vh;
+}
+
+/* //section5 */
+
+#section6 {
+    height: 200vh;
+    background: #20053C;
+    position: relative;
+}
+
+#section6 .project__title {
+    position: relative;
+    z-index: 1000;
+    font-size: 15vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+#section6 .project__title .space {
+    text-align: center;
+    width: 8.1vw;
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#section6 .project__title.outline {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+}
+
+#section6 .project__title.outline .front {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#section6 .project__title .textDesc {
+    font-size: 1rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
+}
+
+#section6 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+}
+
+#section6 .project__title .textDesc .right {
+    width: 30%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+}
+
+#section6 .project__title .textDesc .right a {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+}
+
+#section6 .bgWrap {
+    position: relative;
+    z-index: 1500;
     height: 100vh;
 }
 
-#section6 {
+#section6 .bgWrap .bg {
+    width: 100%;
+    background-color: #20053C;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+#section6 .bgWrap .project__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+#section6 .bgWrap .project__img img {
+    width: 20vw;
+    padding-bottom: 20vh;
+}
+
+/* //section6 */
+
+#section7 {
+    height: 200vh;
+    background: #FAF7F0;
+    position: relative;
+}
+
+#section7 .project__title {
+    position: relative;
+    z-index: 1000;
+    font-size: 15vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #152C74;
+    font-weight: 900;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+#section7 .project__title .space {
+    text-align: center;
+    width: 8.1vw;
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#section7 .project__title.outline {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+}
+
+#section7 .project__title.outline .front {
+    -webkit-text-stroke: 2px #152C74;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #152C74;
+    border-bottom: 1px solid #152C74;
+}
+
+#section7 .project__title .textDesc {
+    font-size: 1rem;
+    color: #152C74;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
+}
+
+#section7 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+}
+
+#section7 .project__title .textDesc .right {
+    width: 30%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+}
+
+#section7 .project__title .textDesc .right a {
+    display: inline-block;
+    background-color: #152C74;
+    margin-top: 10px;
+    color: #fff;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+}
+
+#section7 .bgWrap {
+    position: relative;
+    z-index: 1500;
     height: 100vh;
+}
+
+#section7 .bgWrap .bg {
+    width: 100%;
+    background-color: #FAF7F0;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+
+#section7 .bgWrap .project__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+#section7 .bgWrap .project__img img {
+    width: 20vw;
+    padding-bottom: 20vh;
 }
