@@ -637,3 +637,8 @@ svg {
     width: 20vw;
     padding-bottom: 20vh;
 }
+
+#section8 {
+    height: 100vh;
+    background-color: #000;
+}
