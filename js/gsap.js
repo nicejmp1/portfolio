@@ -109,8 +109,8 @@ gsap.utils.toArray(".img").forEach((img) => {
         start: "top center",
         markers: true,
         end: () => "+=" + document.querySelector(".img").offsetHeight,
-        onEnter: () => changeImage("/assets/img/face_2.jpg"),
-        onEnterBack: () => changeImage("/assets/img/face_1.jpg")
+        onEnter: () => changeImage("../assets/img/face_2.jpg"),
+        onEnterBack: () => changeImage("../assets/img/face_1.jpg")
     })
 })
 
