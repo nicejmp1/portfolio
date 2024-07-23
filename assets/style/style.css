@@ -329,7 +329,7 @@ svg {
 }
 
 #section5 {
-    height: 200vh;
+    height: 210vh;
     background-color: #0d59d0;
     position: relative;
 }
@@ -387,6 +387,7 @@ svg {
     width: 30%;
     font-family: "gyeonggiBatang";
     word-break: keep-all;
+    line-height: 1.4;
 }
 
 #section5 .project__title .textDesc .right a {
@@ -403,8 +404,6 @@ svg {
 #section5 .bgWrap {
     position: relative;
     z-index: 1500;
-    height: 100vh;
-
 }
 
 #section5 .bgWrap .bg {
@@ -414,10 +413,12 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    height: 150vh;
 }
 
 #section5 .bgWrap .project__img {
     width: 100%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,7 +434,7 @@ svg {
 /* //section5 */
 
 #section6 {
-    height: 200vh;
+    height: 210vh;
     background: #20053C;
     position: relative;
 }
@@ -491,6 +492,7 @@ svg {
     width: 30%;
     font-family: "gyeonggiBatang";
     word-break: keep-all;
+    line-height: 1.4;
 }
 
 #section6 .project__title .textDesc .right a {
@@ -507,7 +509,6 @@ svg {
 #section6 .bgWrap {
     position: relative;
     z-index: 1500;
-    height: 100vh;
 }
 
 #section6 .bgWrap .bg {
@@ -517,6 +518,7 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    height: 150vh;
 }
 
 
@@ -527,6 +529,7 @@ svg {
     align-items: center;
     flex-direction: column;
     transition: all 0.3s;
+    height: 500px;
 }
 
 #section6 .bgWrap .project__img img {
@@ -537,7 +540,7 @@ svg {
 /* //section6 */
 
 #section7 {
-    height: 200vh;
+    height: 210vh;
     background: #FAF7F0;
     position: relative;
 }
@@ -594,7 +597,13 @@ svg {
 #section7 .project__title .textDesc .right {
     width: 30%;
     font-family: "gyeonggiBatang";
+    line-height: 1.4;
     word-break: keep-all;
+}
+
+#section7 .project__title .textDesc .right strong {
+    font-weight: bold;
+    color: #20053C;
 }
 
 #section7 .project__title .textDesc .right a {
@@ -611,7 +620,6 @@ svg {
 #section7 .bgWrap {
     position: relative;
     z-index: 1500;
-    height: 100vh;
 }
 
 #section7 .bgWrap .bg {
@@ -621,6 +629,7 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    height: 150vh;
 }
 
 
@@ -631,6 +640,7 @@ svg {
     align-items: center;
     flex-direction: column;
     transition: all 0.3s;
+    height: 500px;
 }
 
 #section7 .bgWrap .project__img img {
@@ -641,4 +651,5 @@ svg {
 #section8 {
     height: 100vh;
     background-color: #000;
+    color: #fff;
 }

@@ -83,7 +83,7 @@ projects.forEach(project => {
             scrollTrigger: {
                 trigger: title,
                 start: "top top",
-                end: () => `+=${project.offsetHeight - 550}px`,
+                end: () => `+=${project.offsetHeight - 580}px`,
                 pin: true,
                 markers: true,
                 scrub: 3,
@@ -115,12 +115,12 @@ gsap.utils.toArray(".img").forEach((img) => {
 })
 
 // section5 애니메이션
-gsap.set("#section5 .project__img", { y: 400 })
+gsap.set("#section5 .project__img", { y: 800 })
 
 gsap.utils.toArray("#section5 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -128,7 +128,7 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
             gsap.to("#section5 .p1", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -136,7 +136,7 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
             gsap.to("#section5 .p2", {
                 rotation: self.progress * -30,
                 x: self.progress * -150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -144,7 +144,7 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
             gsap.to("#section5 .p3", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -153,12 +153,12 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
 })
 
 // section6 애니메이션
-gsap.set("#section6 .project__img", { y: 400 })
+gsap.set("#section6 .project__img", { y: 800 })
 
 gsap.utils.toArray("#section6 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -166,7 +166,7 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
             gsap.to("#section6 .p1", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -191,12 +191,12 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
 })
 
 // section6 애니메이션
-gsap.set("#section7 .project__img", { y: 400 })
+gsap.set("#section7 .project__img", { y: 800 })
 
 gsap.utils.toArray("#section7 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 60%",
+        start: "top 70%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -204,7 +204,7 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
             gsap.to("#section7 .p1", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -212,7 +212,7 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
             gsap.to("#section7 .p2", {
                 rotation: self.progress * -30,
                 x: self.progress * -150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
@@ -220,7 +220,7 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
             gsap.to("#section7 .p3", {
                 rotation: self.progress * 30,
                 x: self.progress * 150,
-                y: -self.progress * 900,
+                y: -self.progress * 1000,
                 duration: 0.1,
                 overwrite: 'auto'
             })
