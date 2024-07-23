@@ -120,7 +120,7 @@ gsap.set("#section5 .project__img", { y: 800 })
 gsap.utils.toArray("#section5 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 70%",
+        start: "top 65%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -158,7 +158,7 @@ gsap.set("#section6 .project__img", { y: 800 })
 gsap.utils.toArray("#section6 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 70%",
+        start: "top 65%",
         end: "bottom",
         scrub: 3,
         markers: true,
@@ -196,7 +196,7 @@ gsap.set("#section7 .project__img", { y: 800 })
 gsap.utils.toArray("#section7 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
-        start: "top 70%",
+        start: "top 65%",
         end: "bottom",
         scrub: 3,
         markers: true,
