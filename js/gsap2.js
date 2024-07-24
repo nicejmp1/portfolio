@@ -229,8 +229,76 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
     })
 })
 
+gsap.utils.toArray("#section7 .project__img").forEach((img) => {
+    ScrollTrigger.create({
+        trigger: img,
+        start: "top 70%",
+        end: "bottom",
+        scrub: 3,
+        markers: true,
+        onUpdate: (self) => {
+            gsap.to("#section7 .p1", {
+                rotation: self.progress * 30,
+                x: self.progress * 150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section7 .p2", {
+                rotation: self.progress * -32,
+                x: self.progress * -150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+
+            gsap.to("#section7 .p3", {
+                rotation: self.progress * 34,
+                x: self.progress * 150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+            gsap.to("#section7 .p4", {
+                rotation: self.progress * -36,
+                x: self.progress * -150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+            gsap.to("#section7 .p5", {
+                rotation: self.progress * 38,
+                x: self.progress * 150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+            gsap.to("#section7 .p6", {
+                rotation: self.progress * -40,
+                x: self.progress * -150,
+                y: -self.progress * 1000,
+                overwrite: 'auto'
+            })
+        }
+    })
+})
+
+
+
 gsap.to("progress", {
     value: 100,
     ease: "none",
     scrollTrigger: { scrub: 0.3 }
 })
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".snapping",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".snapping").offsetWidth
+    }
+})
+
+
