@@ -1,7 +1,50 @@
+body {
+    overflow-y: hidden;
+}
+
+.parallax__progress progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 4px;
+    border: 0;
+    appearance: none;
+    background: transparent;
+}
+
+.parallax__progress progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+progress::-webkit-progress-value {
+    background-color: #fff;
+    background-attachment: fixed;
+}
+
+progress::-moz-progress-bar {
+    background-color: #fff;
+    background-attachment: fixed;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+}
+
+svg {
+    display: none;
+}
+
+#matter-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
 }
 
 #section1 {
@@ -39,14 +82,6 @@
     line-height: 1.5;
 }
 
-#section1 canvas {
-    pointer-events: none;
-}
-
-.matter-container {
-    pointer-events: none;
-}
-
 /* section2 */
 #section2 {
     height: 300vh;
@@ -68,16 +103,25 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2000;
+}
+
+#section2 .title .front {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #fff;
 }
 
 #section2 .about1 {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    position: relative;
+    z-index: 2100;
 }
 
 #section2 .about1 h2 {
-    width: 25%;
+    width: 30%;
     position: relative;
     font-size: 4vw;
     line-height: 1.2;
@@ -139,6 +183,7 @@
 #section2 .about1 .about__text .skill {
     width: 100%;
     margin-top: 40px;
+    background-color: #10376b;
 }
 
 #section2 .about1 .about__text .skill ul {
@@ -155,11 +200,12 @@
 
 #section2 .about1 .about__text .skill li span:nth-child(1) {
     text-transform: uppercase;
+    font-weight: bold;
     flex: 1;
 }
 
 #section2 .about1 .about__text .skill li span:nth-child(2) {
-    flex: 1;
+    flex: 2;
 }
 
 #section2 .about1 .about__text .skill li span:nth-child(3) {
@@ -167,6 +213,417 @@
     text-align: right;
 }
 
+#section2 .bgWrap {
+    position: relative;
+    z-index: 1500;
+}
+
+#section2 .bgWrap .bg {
+    width: 100%;
+    height: 200vh;
+    background-color: #10376b;
+    position: absolute;
+}
+
 #section3 {
+    height: 100vh;
+    background-color: #e0dcd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#section3 .two__intro .two__number h3 {
+    font-size: 70vw;
+    line-height: 0.9;
+    color: #fff;
+    font-family: "SwisspoTrial-CondensedBold";
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    color: #d9d5d1;
+}
+
+#section3 .botLeft {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 1000;
+    font-family: "PartizenoRegular";
+    font-size: 6vw;
+    line-height: 1;
+}
+
+#section3 .topRight {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 34vw;
+}
+
+#section3 .topRight p {
+    margin-bottom: 10px;
+    font-family: "gyeonggiBatang";
+    font-weight: 400;
+}
+
+#section3 .topRight p strong {
+    font-weight: 900;
+}
+
+#section4 {
+    background-color: #0d59d0;
+    position: relative;
+    height: 300vh;
+}
+
+#section4 .project__title {
+    position: relative;
+    z-index: 1000;
+    font-size: 17vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    padding: 60px 7%;
+    text-align: center;
+}
+
+#section4 .project__title .space {
+    text-align: center;
+    width: 8.1vw;
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#section4 .project__title.outline {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+}
+
+#section4 .project__title.outline .front {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#section4 .project__title .textDesc {
+    font-size: 1rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
+}
+
+#section4 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+#section4 .project__title .textDesc .right {
+    width: 40%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+#section4 .project__title .textDesc .right strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#section4 .project__title .textDesc .right a {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 3000;
+    transition: all 0.3s;
+}
+
+#section4 .project__title .textDesc .right a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#section4 .bgWrap {
+    position: relative;
+    z-index: 1500;
+}
+
+#section4 .bgWrap .bg {
+    width: 100%;
+    background-color: #0d59d0;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    height: 230vh;
+    position: absolute;
+    z-index: 500;
+}
+
+#section4 .project__img {
+    width: 100%;
+    display: flex;
+    padding-top: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+#section4 .project__img img {
+    width: 30vw;
+    padding-bottom: 4vh;
+}
+
+#section5 {
+    background-color: #1F023C;
+    position: relative;
+    height: 280vh;
+}
+
+#section5 .project__title {
+    position: relative;
+    z-index: 1000;
+    font-size: 17vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+#section5 .project__title .space {
+    text-align: center;
+    width: 5vw;
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#section5 .project__title.outline {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+}
+
+#section5 .project__title.outline .front {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#section5 .project__title .textDesc {
+    font-size: 1rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
+}
+
+#section5 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+#section5 .project__title .textDesc .right {
+    width: 40%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+
+#section5 .project__title .textDesc .right strong {
+    font-weight: bold;
+}
+
+#section5 .project__title .textDesc .right a {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+    pointer-events: auto;
+}
+
+#section5 .bgWrap {
+    position: relative;
+    z-index: 1500;
+}
+
+#section5 .bgWrap .bg {
+    width: 100%;
+    background-color: #1F023C;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    height: 230vh;
+    position: absolute;
+}
+
+#section5 .project__img {
+    width: 100%;
+    display: flex;
+    padding-top: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+#section5 .project__img img {
+    width: 30vw;
+    padding-bottom: 4vh;
+}
+
+/* =========================== */
+
+#section6 {
+    background: #F7901E;
+    position: relative;
+    height: 250vh;
+}
+
+#section6 .project__title {
+    position: relative;
+    z-index: 1000;
+    font-size: 16.6vw;
+    font-family: "SwisspoTrial-CondensedBold";
+    line-height: 1;
+    color: #fff;
+    font-weight: 900;
+    padding: 60px 7%;
+    text-align: center;
+}
+
+#section6 .project__title .space {
+    text-align: center;
+    width: 8.1vw;
+    display: inline-block;
+    font-size: 10vw;
+}
+
+#section6 .project__title.outline {
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+}
+
+#section6 .project__title.outline .front {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#section6 .project__title .textDesc {
+    font-size: 1rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    align-items: start;
+    text-align: left;
+}
+
+#section6 .project__title .textDesc .left {
+    width: 40%;
+    font-family: "PartizenoRegular";
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+#section6 .project__title .textDesc .right {
+    width: 40%;
+    font-family: "gyeonggiBatang";
+    word-break: keep-all;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+#section6 .project__title .textDesc .right a {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+    font-family: "gyeonggiBatang";
+    font-size: 1rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+    pointer-events: auto;
+}
+
+#section6 .bgWrap {
+    position: relative;
+    z-index: 1500;
+}
+
+#section6 .bgWrap .bg {
+    width: 100%;
+    background: #F7901E;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    height: 200vh;
+    position: absolute;
+}
+
+#section6 .project__img {
+    width: 100%;
+    display: flex;
+    padding-top: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+#section6 .project__img img {
+    width: 30vw;
+    padding-bottom: 4vh;
+}
+
+#section7 {
     height: 100vh;
 }
