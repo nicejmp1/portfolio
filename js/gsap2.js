@@ -107,6 +107,46 @@ projects.forEach(project => {
     })
 })
 
+// const skilldata = document.querySelectorAll(".gauge");
+
+// skilldata.forEach(skill => {
+//     const finalPercent = skill.dataset.percent;
+
+//     gsap.fromTo(skill, { textContent: "0%" }, {
+//         textContent: finalPercent + "%",
+//         snap: "textContent",
+//         scrollTrigger: {
+//             trigger: ".img",
+//             start: "bottom 40%",
+//             toggleActions: "play none none none",
+//             markers: true
+//         },
+//         ease: "none",
+//         duration: 1.5
+//     })
+// })
+
+const skilldata = document.querySelectorAll(".gauge");
+
+skilldata.forEach(skill => {
+    const finalPercent = skill.dataset.percent;
+
+    gsap.fromTo(skill, {
+        textContent: "0%"
+    }, {
+        textContent: finalPercent + "%",
+        snap: "textContent",
+        scrollTrigger: {
+            trigger: skill.parentNode,
+            start: "top bottom-=20%",
+            end: "bottom top",
+            toggleActions: "play none none none",
+        },
+        ease: "none",
+        duration: 2
+    });
+});
+
 gsap.utils.toArray("#section4 .project__img").forEach((img) => {
     ScrollTrigger.create({
         trigger: img,
@@ -289,6 +329,6 @@ gsap.to(sections, {
     }
 });
 
-gsap.utils.toArray(".")
+
 
 
