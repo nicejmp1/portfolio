@@ -49,18 +49,6 @@ setTimeout(() => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".title").forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        end: () => "+=" + document.querySelector(".bg").offsetHeight - innerHeight,
-        pin: true,
-        scrub: 0.5,
-        pinSpacing: false,
-        markers: true,
-    });
-});
-
 const ani1 = gsap.timeline();
 ani1.to("#section2 .about1 div .img .front", { opacity: 0, duration: 0.1, ease: "power3.out" });
 
