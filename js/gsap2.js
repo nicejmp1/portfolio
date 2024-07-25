@@ -58,7 +58,7 @@ ScrollTrigger.create({
     start: "top center",
     end: "bottom 40%",
     scrub: true,
-    markers: true,
+    // markers: true,
 });
 
 
@@ -97,9 +97,9 @@ projects.forEach(project => {
             scrollTrigger: {
                 trigger: title,
                 start: "top top",
-                end: () => `+=${project.offsetHeight - 640}px`,
+                end: () => `+=${project.offsetHeight - window.innerHeight * 0.8}px`,
                 pin: true,
-                markers: true,
+                // markers: true,
                 scrub: 3,
                 pinSpacing: false
             }
@@ -113,7 +113,7 @@ gsap.utils.toArray("#section4 .project__img").forEach((img) => {
         start: "top 80%",
         end: "bottom",
         scrub: 3,
-        markers: true,
+        // markers: true,
         onUpdate: (self) => {
             gsap.to("#section4 .p1", {
                 rotation: self.progress * 30,
@@ -151,7 +151,7 @@ gsap.utils.toArray("#section5 .project__img").forEach((img) => {
         start: "top 70%",
         end: "bottom",
         scrub: 3,
-        markers: true,
+        // markers: true,
         onUpdate: (self) => {
             gsap.to("#section5 .p1", {
                 rotation: self.progress * 30,
@@ -191,7 +191,7 @@ gsap.utils.toArray("#section6 .project__img").forEach((img) => {
         start: "top 80%",
         end: "bottom",
         scrub: 3,
-        markers: true,
+        // markers: true,
         onUpdate: (self) => {
             gsap.to("#section6 .p1", {
                 rotation: self.progress * 30,
@@ -223,7 +223,7 @@ gsap.utils.toArray("#section7 .project__img").forEach((img) => {
         start: "top 70%",
         end: "bottom",
         scrub: 3,
-        markers: true,
+        // markers: true,
         onUpdate: (self) => {
             gsap.to("#section7 .p1", {
                 rotation: self.progress * 30,
@@ -283,10 +283,12 @@ gsap.to(sections, {
     scrollTrigger: {
         trigger: ".snapping",
         pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
+        scrub: true,
+        // snap: 1 / (sections.length - 1),
         end: () => "+=" + document.querySelector(".snapping").offsetWidth
     }
-})
+});
+
+gsap.utils.toArray(".")
 
 

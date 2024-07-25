@@ -60,6 +60,7 @@ svg {
 }
 
 #section1 .text {
+    padding: 2rem;
     margin-top: 10vh;
     text-align: center;
 }
@@ -75,7 +76,7 @@ svg {
 }
 
 #section1 .text p {
-    font-size: 1vw;
+    font-size: 16px;
     width: 100%;
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -85,12 +86,10 @@ svg {
 
 /* section2 */
 #section2 {
-    height: 100%;
     background-color: #10376b;
     position: relative;
     overflow: hidden;
-    padding: 0 5%;
-    padding-bottom: 100px;
+    padding-bottom: 30vh;
 }
 
 #section2 .title {
@@ -98,21 +97,19 @@ svg {
     font-size: 30vw;
     color: #fff;
     text-align: right;
-    line-height: 1;
+    padding-right: 5%;
 }
 
 #section2 .about1 {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    position: relative;
-    z-index: 2100;
 }
 
 #section2 .about1 h2 {
-    width: 30%;
+    width: 20%;
     position: relative;
-    font-size: 3vw;
+    font-size: 40px;
     line-height: 1.2;
     font-family: "gmarket";
 }
@@ -127,20 +124,22 @@ svg {
 }
 
 #section2 .about1 .about__text {
-    width: 55%;
+    width: 60%;
     text-align: left;
-    font-family: "gowunBatang";
+    font-family: "nanumSquareNeo";
 }
 
 #section2 .about1 .about__text p {
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 #section2 .about1 .about__text .img {
     max-width: 460px;
     height: 600px;
     background-color: #ccc;
-    margin-top: 20px;
+    margin-top: 5%;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -172,7 +171,6 @@ svg {
 #section2 .about1 .about__text .skill {
     width: 100%;
     margin-top: 40px;
-    background-color: #10376b;
 }
 
 #section2 .about1 .about__text .skill ul {
@@ -184,13 +182,14 @@ svg {
 #section2 .about1 .about__text .skill li {
     display: flex;
     justify-content: space-between;
-    padding: 2px 10px;
+    padding: 2px 0;
 }
 
 #section2 .about1 .about__text .skill li span:nth-child(1) {
     text-transform: uppercase;
     font-weight: bold;
     flex: 1;
+    font-size: 14px;
 }
 
 #section2 .about1 .about__text .skill li span:nth-child(2) {
@@ -200,18 +199,7 @@ svg {
 #section2 .about1 .about__text .skill li span:nth-child(3) {
     flex: 1;
     text-align: right;
-}
-
-#section2 .bgWrap {
-    position: relative;
-    z-index: 1500;
-}
-
-#section2 .bgWrap .bg {
-    width: 100%;
-    height: 200vh;
-    background-color: #10376b;
-    position: absolute;
+    font-weight: 300;
 }
 
 #section3 {
@@ -254,7 +242,7 @@ svg {
 
 #section3 .topRight p {
     margin-bottom: 10px;
-    font-family: "gyeonggiBatang";
+    font-family: "nanumSquareNeo";
     font-weight: 400;
 }
 
@@ -265,18 +253,18 @@ svg {
 #section4 {
     background-color: #0d59d0;
     position: relative;
-    height: 100%;
+    height: 290vh;
 }
 
 #section4 .project__title {
     position: relative;
     z-index: 1000;
-    font-size: 17vw;
+    font-size: 19.77vw;
     font-family: "SwisspoTrial-CondensedBold";
-    line-height: 1;
+    line-height: 0.8;
     color: #fff;
     font-weight: 900;
-    padding: 60px 7%;
+    padding: 60px 2%;
     text-align: center;
 }
 
@@ -305,7 +293,7 @@ svg {
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
+    padding-top: 1.5%;
     align-items: start;
     text-align: left;
 }
@@ -316,19 +304,22 @@ svg {
     font-size: 40px;
     line-height: 1;
     letter-spacing: 2px;
+    font-weight: normal;
+    padding-left: 40px;
 }
 
 #section4 .project__title .textDesc .right {
-    width: 40%;
-    font-family: "gyeonggiBatang";
+    width: 28%;
+    font-family: "nanumSquareNeo";
     word-break: keep-all;
     line-height: 1.4;
     font-weight: normal;
+    padding-right: 2%;
 }
 
 #section4 .project__title .textDesc .right strong {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #section4 .project__title .textDesc .right a {
@@ -336,7 +327,7 @@ svg {
     background-color: #fff;
     margin-top: 10px;
     color: #000;
-    font-family: "gyeonggiBatang";
+    font-family: "nanumSquareNeo";
     font-size: 1rem;
     padding: 6px 15px;
     border-radius: 30px;
@@ -357,21 +348,19 @@ svg {
 }
 
 #section4 .bgWrap .bg {
-    width: 100%;
+    width: 100vw;
     background-color: #0d59d0;
-    padding: 0 5vw;
     display: flex;
+    height: 220vh;
     justify-content: space-between;
-    padding-top: 40px;
-    height: 250lvh;
+    margin-bottom: 40px;
     position: absolute;
-    z-index: 500;
 }
 
 #section4 .project__img {
     width: 100%;
     display: flex;
-    padding-top: 70vh;
+    padding-top: 36rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -382,25 +371,25 @@ svg {
 }
 
 #section4 .project__img img {
-    width: 30vw;
-    padding-bottom: 4vh;
+    width: 26vw;
+    padding-bottom: 40px;
 }
 
 #section5 {
     background-color: #1F023C;
     position: relative;
-    height: 100%;
+    height: 270vh;
 }
 
 #section5 .project__title {
     position: relative;
     z-index: 1000;
-    font-size: 17vw;
+    font-size: 18.93vw;
     font-family: "SwisspoTrial-CondensedBold";
-    line-height: 1;
+    line-height: 0.8;
     color: #fff;
     font-weight: 900;
-    padding: 60px 6%;
+    padding: 60px 2%;
     text-align: center;
 }
 
@@ -429,7 +418,7 @@ svg {
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
+    padding-top: 1.5%;
     align-items: start;
     text-align: left;
 }
@@ -440,14 +429,17 @@ svg {
     font-size: 40px;
     line-height: 1;
     letter-spacing: 2px;
+    padding-left: 40px;
+    font-weight: normal;
 }
 
 #section5 .project__title .textDesc .right {
-    width: 40%;
-    font-family: "gyeonggiBatang";
+    width: 28%;
+    font-family: "nanumSquareNeo";
     word-break: keep-all;
     line-height: 1.4;
     font-weight: normal;
+    padding-right: 2%;
 }
 
 
@@ -460,7 +452,7 @@ svg {
     background-color: #fff;
     margin-top: 10px;
     color: #000;
-    font-family: "gyeonggiBatang";
+    font-family: "nanumSquareNeo";
     font-size: 1rem;
     padding: 6px 15px;
     border-radius: 30px;
@@ -475,19 +467,17 @@ svg {
 #section5 .bgWrap .bg {
     width: 100%;
     background-color: #1F023C;
-    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    height: 210lvh;
-    max-height: 260vh;
+    height: 220vh;
     position: absolute;
 }
 
 #section5 .project__img {
     width: 100%;
     display: flex;
-    padding-top: 70vh;
+    padding-top: 36rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -498,8 +488,8 @@ svg {
 }
 
 #section5 .project__img img {
-    width: 30vw;
-    padding-bottom: 6vh;
+    width: 26vw;
+    padding-bottom: 40px;
 }
 
 /* =========================== */
@@ -507,18 +497,18 @@ svg {
 #section6 {
     background: #F7901E;
     position: relative;
-    height: 100%;
+    height: 260vh;
 }
 
 #section6 .project__title {
     position: relative;
     z-index: 1000;
-    font-size: 16.6vw;
+    font-size: 19.23vw;
     font-family: "SwisspoTrial-CondensedBold";
-    line-height: 1;
+    line-height: 0.8;
     color: #fff;
     font-weight: 900;
-    padding: 60px 7%;
+    padding: 60px 2%;
     text-align: center;
 }
 
@@ -547,7 +537,7 @@ svg {
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
+    padding-top: 1.5%;
     align-items: start;
     text-align: left;
 }
@@ -558,14 +548,17 @@ svg {
     font-size: 40px;
     line-height: 1;
     letter-spacing: 2px;
+    padding-left: 40px;
+    font-weight: normal;
 }
 
 #section6 .project__title .textDesc .right {
-    width: 40%;
-    font-family: "gyeonggiBatang";
+    width: 28%;
+    font-family: "nanumSquareNeo";
     word-break: keep-all;
     line-height: 1.4;
     font-weight: normal;
+    padding-right: 2%;
 }
 
 #section6 .project__title .textDesc .right a {
@@ -573,7 +566,7 @@ svg {
     background-color: #fff;
     margin-top: 10px;
     color: #000;
-    font-family: "gyeonggiBatang";
+    font-family: "nanumSquareNeo";
     font-size: 1rem;
     padding: 6px 15px;
     border-radius: 30px;
@@ -588,18 +581,17 @@ svg {
 #section6 .bgWrap .bg {
     width: 100%;
     background: #F7901E;
-    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    height: 200lvh;
+    height: 200vh;
     position: absolute;
 }
 
 #section6 .project__img {
     width: 100%;
     display: flex;
-    padding-top: 70vh;
+    padding-top: 36rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -610,26 +602,24 @@ svg {
 }
 
 #section6 .project__img img {
-    width: 30vw;
-    padding-bottom: 4vh;
+    width: 25vw;
+    padding-bottom: 40px;
 }
 
 #section7 {
     background: #ed4c87;
     position: relative;
-    height: 100%;
-    padding-bottom: 40px;
 }
 
 #section7 .project__title {
     position: relative;
     z-index: 1000;
-    font-size: 17vw;
+    font-size: 20vw;
     font-family: "SwisspoTrial-CondensedBold";
-    line-height: 1;
+    line-height: 0.8;
     color: #fff;
     font-weight: 900;
-    padding: 60px 8%;
+    padding: 60px 2%;
     text-align: center;
 }
 
@@ -658,7 +648,7 @@ svg {
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    padding-top: 3%;
+    padding-top: 1.5%;
     align-items: start;
     text-align: left;
 }
@@ -668,12 +658,16 @@ svg {
     font-family: "PartizenoRegular";
     font-size: 40px;
     line-height: 1;
+    font-weight: normal;
     letter-spacing: 2px;
+    padding-left: 40px;
+
 }
 
 #section7 .project__title .textDesc .right {
-    width: 40%;
-    font-family: "gyeonggiBatang";
+    width: 30%;
+    padding-right: 2%;
+    font-family: "nanumSquareNeo";
     word-break: keep-all;
     line-height: 1.4;
     font-weight: normal;
@@ -684,7 +678,7 @@ svg {
     background-color: #fff;
     margin-top: 10px;
     color: #000;
-    font-family: "gyeonggiBatang";
+    font-family: "nanumSquareNeo";
     font-size: 1rem;
     padding: 6px 10px;
     border-radius: 30px;
@@ -703,14 +697,14 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    height: 320lvh;
+    height: 270vh;
     position: absolute;
 }
 
 #section7 .project__img {
     width: 100%;
     display: flex;
-    padding-top: 70vh;
+    padding-top: 36rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -721,13 +715,13 @@ svg {
 }
 
 #section7 .project__img img {
-    width: 30vw;
-    padding-bottom: 4vh;
+    width: 26vw;
+    padding-bottom: 40px;
 }
 
 
 .snapping {
-    width: 200%;
+    width: 300%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -738,10 +732,115 @@ svg {
     height: 100vh;
 }
 
-.snapping .panel.red {
-    background-color: black;
+#section8 {
+    width: 100%;
+    background-color: #222;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-#section8 h1 {
+.sec5-title {
+    width: 700px;
+    margin-left: 10vw;
+    margin-top: 50px;
+    display: flex;
+}
+
+.sec5-title .left {
+    width: 50%;
+    height: 100%;
+}
+
+.sec5-title .left .t1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    color: rgb(250, 68, 68);
+    font-size: 400px;
+    line-height: 0.7;
+}
+
+.sec5-title .left .t2 {
+    font-size: 145px;
+    line-height: 0.8;
     color: #fff;
+}
+
+.sec5-title .left .t3 {
+    font-size: 145px;
+    line-height: 0.8;
+    color: #fff;
+}
+
+.sec5-title .right .r1 {
+    font-size: 145px;
+    line-height: 0.8;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.sec5-title .right .r2 {
+    font-size: 145px;
+    line-height: 0.8;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.sec5-title .right .r3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    color: rgb(250, 68, 68);
+    font-size: 400px;
+    line-height: 0.68;
+}
+
+.sec5-title>div span {
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#section8 .desc {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 45%;
+    text-align: right;
+    font-family: "nanumSquareNeo";
+    color: #d2d2d2;
+}
+
+#section9 {
+    width: 100%;
+    background-color: #000;
+}
+
+#section9 .left {
+    width: 50%;
+}
+
+#section9 .right {
+    width: 50%;
+}
+
+.sec_title {
+    position: absolute;
+    bottom: 0;
+    padding-left: 2%;
+    font-size: 10vw;
+    color: rgb(250, 68, 68);
+}
+
+#section10 {
+    width: 100%;
+    background-color: #0d59d0;
+}
+
+#section11 {
+    width: 100%;
+    height: 100vh;
 }
