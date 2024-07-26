@@ -299,7 +299,7 @@ svg {
 }
 
 #section4 .project__title .textDesc .left {
-    width: 40%;
+    width: 16%;
     font-family: "PartizenoRegular";
     font-size: 40px;
     line-height: 1;
@@ -424,7 +424,7 @@ svg {
 }
 
 #section5 .project__title .textDesc .left {
-    width: 40%;
+    width: 16%;
     font-family: "PartizenoRegular";
     font-size: 40px;
     line-height: 1;
@@ -543,10 +543,10 @@ svg {
 }
 
 #section6 .project__title .textDesc .left {
-    width: 40%;
+    width: 16%;
     font-family: "PartizenoRegular";
     font-size: 40px;
-    line-height: 1;
+    line-height: 1.1;
     letter-spacing: 2px;
     padding-left: 40px;
     font-weight: normal;
@@ -654,10 +654,10 @@ svg {
 }
 
 #section7 .project__title .textDesc .left {
-    width: 40%;
+    width: 20%;
     font-family: "PartizenoRegular";
     font-size: 40px;
-    line-height: 1;
+    line-height: 1.1;
     font-weight: normal;
     letter-spacing: 2px;
     padding-left: 40px;
@@ -725,6 +725,8 @@ svg {
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
+    background-color: #222;
+    color: #fff;
 }
 
 .snapping .panel {
@@ -817,40 +819,76 @@ svg {
 #section9 {
     width: 100%;
     height: 100%;
-    background-color: #000;
     display: flex;
 }
 
 #section9 .left {
     width: 50%;
-    padding: 60px 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    background-color: red;
 }
 
 #section9 .left .left__box {
-    width: 330px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10vh;
 }
 
 #section9 .left .left__box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-#section9 .left .left__box .left__box__desc {
+.left__box__desc {
     width: 100%;
     height: 50px;
     margin-top: 20px;
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.right__box__desc {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__box__desc a {
+    width: 120px;
+    color: #000;
+    text-align: center;
+    padding: 4px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.left__box__desc a i {
+    padding-left: 2px;
+}
+
+
+
+.right__box__desc a {
+    width: 120px;
+    padding: 4px 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #section9 .left .left__box2 {
-    width: 330px;
-    height: 300px;
-    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10vh;
 }
 
 
@@ -858,28 +896,45 @@ svg {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 
 #section9 .right {
     width: 50%;
-    background-color: blue;
     display: flex;
-    padding: 60px 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
     gap: 2rem;
 }
 
 #section9 .right .right__box {
-    width: 330px;
-    height: 300px;
-    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10vh;
+}
+
+#section9 .right .right__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 #section9 .right .right__box2 {
-    width: 330px;
-    height: 300px;
-    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10vh;
 }
+
+#section9 .right .right__box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .sec_title {
     position: absolute;
@@ -892,52 +947,219 @@ svg {
 #section10 {
     width: 100%;
     height: 100%;
-    background-color: #0d59d0;
     display: flex;
 }
-
 
 #section10 .left {
     width: 50%;
-    padding: 2rem;
+    padding: 60px 2rem;
     display: flex;
-    gap: 4rem;
-    background-color: red;
+    gap: 2rem;
 }
 
 #section10 .left .left__box {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     background-color: #fff;
 }
 
 #section10 .left .left__box2 {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     background-color: #fff;
 }
 
 #section10 .right {
     width: 50%;
-    padding: 2rem;
+    padding: 60px 2rem;
     display: flex;
-    gap: 4rem;
-    background-color: blue;
+    gap: 2rem;
 }
 
 #section10 .right .right__box {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     background-color: #fff;
 }
 
 #section10 .right .right__box2 {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 50%;
     background-color: #fff;
 }
 
 #section11 {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+#section11 .footer__title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 2%;
+}
+
+#section11 .footer__title h1 {
+    font-size: 3vw;
+}
+
+#section11 .footer__title p {
+    font-size: 1.4vw;
+}
+
+.connect {
+    padding: 10px 2%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+
+.connect h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #333;
+}
+
+.connect p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.connect p i {
+    vertical-align: -3px;
+    font-size: 1.3rem;
+}
+
+#section11 .test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section11 .test .sns__box {
+    flex: 1;
+    text-align: left;
+}
+
+#section11 .test .copy {
+    text-align: center;
+    flex: 2;
+}
+
+#section11 .test .text {
+    text-align: right;
+    flex: 1;
+}
+
+#section11 .test .copy {
+    color: #fff;
+}
+
+#section11 .sns__box a {
+    font-size: 2vw;
+    color: #fff;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
+    position: relative;
+    height: 300px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px;
+    }
+}
+
+.item {
+    width: 300px;
+    height: 100%;
+    background-color: red;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(300px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+    background-image: url(../img/img1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+    background-image: url(../img/img2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+    background-image: url(../img/img3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+    background-image: url(../img/img4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+    background-image: url(../img/img5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+    background-image: url(../img/img6.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+    background-image: url(../img/img7.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+    background-image: url(../img/img8.jpg);
+    background-position: center center;
+    background-size: cover;
 }
