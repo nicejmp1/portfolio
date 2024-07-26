@@ -816,15 +816,69 @@ svg {
 
 #section9 {
     width: 100%;
+    height: 100%;
     background-color: #000;
+    display: flex;
 }
 
 #section9 .left {
     width: 50%;
+    padding: 60px 1rem;
+    display: flex;
+    gap: 2rem;
+    background-color: red;
 }
+
+#section9 .left .left__box {
+    width: 330px;
+    height: 300px;
+}
+
+#section9 .left .left__box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section9 .left .left__box .left__box__desc {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+#section9 .left .left__box2 {
+    width: 330px;
+    height: 300px;
+    background-color: #fff;
+}
+
+
+#section9 .left .left__box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 #section9 .right {
     width: 50%;
+    background-color: blue;
+    display: flex;
+    padding: 60px 1rem;
+    gap: 2rem;
+}
+
+#section9 .right .right__box {
+    width: 330px;
+    height: 300px;
+    background-color: #fff;
+}
+
+#section9 .right .right__box2 {
+    width: 330px;
+    height: 300px;
+    background-color: #fff;
 }
 
 .sec_title {
@@ -837,7 +891,50 @@ svg {
 
 #section10 {
     width: 100%;
+    height: 100%;
     background-color: #0d59d0;
+    display: flex;
+}
+
+
+#section10 .left {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    background-color: red;
+}
+
+#section10 .left .left__box {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+
+#section10 .left .left__box2 {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+
+#section10 .right {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    background-color: blue;
+}
+
+#section10 .right .right__box {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+}
+
+#section10 .right .right__box2 {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
 }
 
 #section11 {
