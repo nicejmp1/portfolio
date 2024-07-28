@@ -473,55 +473,36 @@
             </div>
         </section>
         <section id="section9" class="panel">
-            <div class="left">
-                <!-- <h1 class="sec_title">.01</h1> -->
-                <div class="left__box">
-                    <img src="assets/img/java.jpg" alt="">
-                    <div class="left__box__desc">
-                        <span>Javascript를 공부하며 제작한 사이트입니다.</span>
-                        <a href="#">사이트 보기<i class="ri-arrow-right-up-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="left__box2">
-                    <img src="assets/img/quiz.svg" alt="">
-                    <div class="left__box__desc">
-                        <span>Javascript를 공부한 후 만든 퀴즈 게임입니다.</span>
-                        <a href="#">사이트 보기<i class="ri-arrow-right-up-line"></i></a>
-                    </div>
-                </div>
+            <div class="pl_title">
+                <h3><strong>javascript</strong> <br />
+                    Quiz Game
+                </h3>
+                <p>자바스크립트를 공부하며 처음 만든 퀴즈게임 입니다.</p>
             </div>
-            <div class="right">
-                <!-- <h1 class="sec_title">.02</h1> -->
-                <div class="right__box">
-                    <img src="assets/img/mysql.jpg" alt="">
-                    <div class="right__box__desc">
-                        <span>MySql를 공부하며 제작한 사이트입니다.</span>
-                        <a href="#">사이트 보기</a>
-                    </div>
-                </div>
-                <div class="right__box2">
-                    <img src="assets/img/mysql.jpg" alt="">
-                    <div class="right__box__desc">
-                        <span>MySql를 공부하며 제작한 사이트입니다.</span>
-                        <a href="#">사이트 보기</a>
-                    </div>
-                </div>
+            <div class="pl_img">
+                <div class="cursor"></div>
+
+                <img src="assets/img/game1.jpg" alt="">
+                <a href="" class="pl_img_text">
+                    <p class="rotate-text"><strong>Game</strong>start</p>
+                </a>
+            </div>
+
+            <div class="pl_title2">
+                <h3><strong>javascript</strong> <br />
+                    Quiz Game
+                </h3>
+                <p>자바스크립트를 공부하며 처음 만든 퀴즈게임 입니다.</p>
+            </div>
+            <div class="pl_img2">
+                <div class="cursor"></div>
+                <img src="assets/img/game1.jpg" alt="">
+                <a href="" class="pl_img_text2">
+                    <p class="rotate-text"><strong>Game</strong>start</p>
+                </a>
             </div>
         </section>
-
-        <section id="section10" class="panel">
-            <div class="left">
-                <h1 class="sec_title">.03</h1>
-                <div class="left__box"></div>
-                <div class="left__box2"></div>
-            </div>
-            <div class="right">
-                <h1 class="sec_title">.04</h1>
-                <div class="right__box"></div>
-                <div class="right__box2"></div>
-            </div>
-        </section>
+        <section id="section10" class="panel"></section>
     </div>
 
     <section id="section11">
@@ -571,6 +552,28 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="js/matter.js"></script>
     <script src="js/gsap2.js"></script>
+    <!-- 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector('#section9 .cursor');
+            const imgContainer = document.querySelector('#section9 .pl_img');
+
+            imgContainer.addEventListener('mousemove', function (e) {
+                const rect = imgContainer.getBoundingClientRect();
+                const offsetX = e.clientX - rect.left;
+                const offsetY = e.clientY - rect.top;
+                gsap.to(cursor, { duration: 0.6, left: offsetX - cursor.offsetWidth / 2, top: offsetY - cursor.offsetHeight / 2 });
+            });
+
+            imgContainer.addEventListener('mouseenter', function () {
+                cursor.style.display = 'block';
+            });
+
+            imgContainer.addEventListener('mouseleave', function () {
+                cursor.style.display = 'none';
+            });
+        });
+    </script> -->
 </body>
 
 </html>
