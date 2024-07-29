@@ -1103,6 +1103,7 @@ svg {
     line-height: 0.9;
     text-align: left;
     word-break: keep-all;
+    text-transform: capitalize;
     font-family: "SwisspoTrial-CondensedBold";
     padding-top: 2vw;
     flex: 1;
