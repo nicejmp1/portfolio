@@ -697,8 +697,14 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    height: 200vh;
+    height: 170vh;
     position: absolute;
+}
+
+@media (max-width:1000px) {
+    #section7 .bgWrap .bg {
+        height: 100vh;
+    }
 }
 
 #section7 .project__img {
@@ -718,7 +724,6 @@ svg {
     width: 26vw;
     padding-bottom: 40px;
 }
-
 
 .snapping {
     width: 300%;
@@ -818,15 +823,12 @@ svg {
 }
 
 #section9 {
-    width: 100%;
-    height: 100%;
     display: flex;
 }
 
 #section9 .pl_title {
-    width: 24%;
-    padding-top: 30vw;
-    padding-left: 6vw;
+    width: 20%;
+    padding-top: 70vh;
 }
 
 #section9 .pl_title h3 {
@@ -846,20 +848,20 @@ svg {
 }
 
 #section9 .pl_img {
-    max-width: 628px;
-    max-height: 800px;
+    max-width: 600px;
+    max-height: 770px;
     margin-left: 20px;
     margin-bottom: 40px;
     position: relative;
 }
 
-#section9 .pl_img:hover {
-    background-color: #fff;
-}
-
-#section9 .pl_img img {
+#section9 .pl_img .img {
     width: 100%;
     height: 100%;
+    background-image: url(../img/game1.jpg);
+    aspect-ratio: 8/13;
+    background-size: cover;
+    background-position: center;
 }
 
 #section9 .pl_img .pl_img_text {
@@ -928,11 +930,11 @@ svg {
 }
 
 #section9 .pl_img2 {
-    max-width: 628px;
-    max-height: 880px;
+    max-width: 600px;
+    max-height: 770px;
     margin-left: 20px;
     position: relative;
-    margin-top: 60px;
+    margin-top: 140px;
 }
 
 #section9 .pl_img2:hover {
@@ -988,15 +990,13 @@ svg {
 }
 
 #section10 {
-    width: 100%;
-    height: 100%;
     display: flex;
 }
 
 #section10 .pl_title {
-    width: 30%;
-    padding-top: 30vw;
-    padding-left: 10vw;
+    width: 24%;
+    padding-top: 70vh;
+    padding-left: 6vw;
 }
 
 #section10 .pl_title h3 {
@@ -1016,9 +1016,8 @@ svg {
 }
 
 #section10 .pl_img {
-    max-width: 628px;
-    max-height: 800px;
-    margin-left: 20px;
+    width: 600px;
+    height: 760px;
     margin-bottom: 40px;
     position: relative;
 }
@@ -1092,12 +1091,15 @@ svg {
     height: 40px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 #section11 .connect {
     width: 50%;
-    font-size: 8vw;
+    font-size: 7vw;
     line-height: 0.9;
     text-align: left;
     word-break: keep-all;
@@ -1128,11 +1130,18 @@ svg {
     font-weight: bold;
     color: #000;
     background-color: #fff;
+    transition: all 0.3s;
 }
 
 #section11 .connect__sns .mail i {
     padding-right: 10px;
     font-size: 30px;
+}
+
+#section11 .connect__sns .mail:hover,
+#section11 .connect__sns .chat:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 #section11 .connect__sns .chat {
@@ -1144,10 +1153,11 @@ svg {
     font-weight: bold;
     color: #000;
     background-color: #fff;
-    margin-left: 20px;
+    margin-right: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
 #section11 .connect__sns .chat i {
@@ -1186,169 +1196,4 @@ svg {
 
 #section11 .connect__sns .insta i {
     font-size: 30px;
-}
-
-/* #section11 .footer__title {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    padding-top: 2%;
-}
-
-#section11 .footer__title h1 {
-    font-size: 3vw;
-}
-
-#section11 .footer__title p {
-    font-size: 1.4vw;
-}
-
-.connect {
-    padding: 10px 2%;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    text-align: left;
-    max-width: 400px;
-    margin: auto;
-}
-
-.connect h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    text-align: center;
-    color: #333;
-}
-
-.connect p {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-}
-
-.connect p i {
-    vertical-align: -3px;
-    font-size: 1.3rem;
-}
-
-#section11 .test {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#section11 .test .sns__box {
-    flex: 1;
-    text-align: left;
-}
-
-#section11 .test .copy {
-    text-align: center;
-    flex: 2;
-}
-
-#section11 .test .text {
-    text-align: right;
-    flex: 1;
-}
-
-#section11 .test .copy {
-    color: #fff;
-}
-
-#section11 .sns__box a {
-    font-size: 2vw;
-    color: #fff;
-} */
-
-.wrapper {
-    width: 90%;
-    max-width: 1400px;
-    margin-inline: auto;
-    position: relative;
-    height: 300px;
-    margin-top: 5rem;
-    overflow: hidden;
-    mask-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 20%,
-            rgba(0, 0, 0, 1) 80%,
-            rgba(0, 0, 0, 0));
-}
-
-@keyframes scrollLeft {
-    to {
-        left: -200px;
-    }
-}
-
-.item {
-    width: 300px;
-    height: 100%;
-    background-color: red;
-    border-radius: 6px;
-    position: absolute;
-    left: max(calc(300px * 8), 100%);
-    animation-name: scrollLeft;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-.item1 {
-    animation-delay: calc(30s / 8 * (8 - 1) * -1);
-    background-image: url(../img/img1.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item2 {
-    animation-delay: calc(30s / 8 * (8 - 2) * -1);
-    background-image: url(../img/img2.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item3 {
-    animation-delay: calc(30s / 8 * (8 - 3) * -1);
-    background-image: url(../img/img3.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item4 {
-    animation-delay: calc(30s / 8 * (8 - 4) * -1);
-    background-image: url(../img/img4.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item5 {
-    animation-delay: calc(30s / 8 * (8 - 5) * -1);
-    background-image: url(../img/img5.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item6 {
-    animation-delay: calc(30s / 8 * (8 - 6) * -1);
-    background-image: url(../img/img6.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item7 {
-    animation-delay: calc(30s / 8 * (8 - 7) * -1);
-    background-image: url(../img/img7.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-.item8 {
-    animation-delay: calc(30s / 8 * (8 - 8) * -1);
-    background-image: url(../img/img8.jpg);
-    background-position: center center;
-    background-size: cover;
 }
