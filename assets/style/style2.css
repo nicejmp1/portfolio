@@ -1178,6 +1178,15 @@ svg {
     padding: 4px 20px;
     border: 1px solid #fff;
     border-radius: 30px;
+    transition: all 0.3s;
+
+}
+
+#section11 .connect__sns .github:hover,
+#section11 .connect__sns .kakao:hover,
+#section11 .connect__sns .insta:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 #section11 .connect__sns .github i {
@@ -1189,6 +1198,7 @@ svg {
     padding: 4px 20px;
     border: 1px solid #fff;
     border-radius: 30px;
+    transition: all 0.3s;
 }
 
 #section11 .connect__sns .kakao i {
@@ -1200,6 +1210,7 @@ svg {
     padding: 4px 20px;
     border: 1px solid #fff;
     border-radius: 30px;
+    transition: all 0.3s;
 }
 
 #section11 .connect__sns .insta i {
