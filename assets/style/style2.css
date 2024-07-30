@@ -375,6 +375,10 @@ svg {
     padding-bottom: 40px;
 }
 
+#section4 .project__img .p3 {
+    width: 28vw;
+}
+
 #section5 {
     background-color: #1F023C;
     position: relative;
@@ -604,6 +608,10 @@ svg {
 #section6 .project__img img {
     width: 25vw;
     padding-bottom: 40px;
+}
+
+#section6 .project__img .p3 {
+    width: 28vw;
 }
 
 #section7 {
@@ -995,7 +1003,7 @@ svg {
 
 #section10 .pl_title {
     width: 24%;
-    padding-top: 70vh;
+    padding-top: 60vh;
     padding-left: 6vw;
 }
 
@@ -1120,8 +1128,7 @@ svg {
 
 #section11 .connect__sns .mail {
     width: 25%;
-    height: 100%;
-    padding: 10px 30px;
+    padding: 4px 20px;
     border: 1px solid #fff;
     border-radius: 30px;
     display: flex;
