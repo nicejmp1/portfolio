@@ -371,12 +371,17 @@ svg {
 }
 
 #section4 .project__img img {
-    width: 26vw;
+    width: 32vw;
     padding-bottom: 40px;
 }
 
+
+#section4 .project__img .p1 {
+    width: 34vw;
+}
+
 #section4 .project__img .p3 {
-    width: 28vw;
+    width: 36vw;
 }
 
 #section5 {
@@ -489,10 +494,11 @@ svg {
     position: relative;
     z-index: 2000;
     pointer-events: none;
+
 }
 
 #section5 .project__img img {
-    width: 26vw;
+    width: 34vw;
     padding-bottom: 40px;
 }
 
@@ -606,12 +612,12 @@ svg {
 }
 
 #section6 .project__img img {
-    width: 25vw;
+    width: 30vw;
     padding-bottom: 40px;
 }
 
 #section6 .project__img .p3 {
-    width: 28vw;
+    width: 34vw;
 }
 
 #section7 {
@@ -705,7 +711,7 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    height: 170vh;
+    height: 180vh;
     position: absolute;
 }
 
@@ -729,7 +735,7 @@ svg {
 }
 
 #section7 .project__img img {
-    width: 26vw;
+    width: 30vw;
     padding-bottom: 40px;
 }
 
@@ -893,6 +899,7 @@ svg {
 
 #section9 .pl_img .pl_img_text:hover {
     background-color: #000;
+    border: 1px solid red;
 }
 
 #section9 .pl_img .rotate-text {
@@ -975,6 +982,7 @@ svg {
 
 #section9 .pl_img2 .pl_img_text2:hover {
     background-color: #000;
+    border: 1px solid red;
 }
 
 #section9 .pl_img2 .rotate-text {
@@ -1059,8 +1067,8 @@ svg {
 }
 
 #section10 .pl_img .pl_img_text:hover {
-    background-color: #b5f603;
-    color: #000;
+    background-color: #000;
+    border: 1px solid red;
 }
 
 #section10 .pl_img .rotate-text {
@@ -1107,8 +1115,8 @@ svg {
 
 
 #section11 .connect {
-    width: 50%;
-    font-size: 7vw;
+    width: 60%;
+    font-size: 8.2vw;
     line-height: 0.9;
     text-align: left;
     word-break: keep-all;
