@@ -944,6 +944,16 @@ svg {
     word-break: keep-all;
 }
 
+#section9 .pl_title2 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px 14px;
+    border-radius: 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+
 #section9 .pl_img2 {
     max-width: 600px;
     max-height: 770px;
