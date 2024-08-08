@@ -107,25 +107,6 @@ projects.forEach(project => {
     })
 })
 
-// const skilldata = document.querySelectorAll(".gauge");
-
-// skilldata.forEach(skill => {
-//     const finalPercent = skill.dataset.percent;
-
-//     gsap.fromTo(skill, { textContent: "0%" }, {
-//         textContent: finalPercent + "%",
-//         snap: "textContent",
-//         scrollTrigger: {
-//             trigger: ".img",
-//             start: "bottom 40%",
-//             toggleActions: "play none none none",
-//             markers: true
-//         },
-//         ease: "none",
-//         duration: 1.5
-//     })
-// })
-
 const skilldata = document.querySelectorAll(".gauge");
 
 skilldata.forEach(skill => {
